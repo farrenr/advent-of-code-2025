@@ -2,10 +2,11 @@ use std::fs::read_to_string;
 use std::path::Path;
 
 mod question1;
+mod question2;
 
 fn main() {
-    let lines = read_lines("./inputs/question1.txt");
-    question1::question1(lines);
+    let lines = read_lines("./inputs/question2.txt");
+    question2::question2(lines);
 }
 
 fn read_lines<P: AsRef<Path>>(file_path: P) -> Vec<String>
